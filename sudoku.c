@@ -48,7 +48,6 @@ int is_valid(Node* n){
   for (int k=0; k<=9; k++){
     int *a=calloc(10,sizeof(int));
     for(int p=0;p<9;p++){
-      int *a=calloc(10,sizeof(int));
       int i=3*(k/3) + (p/3);
       int j=3*(k%3) + (p%3);
       if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]=1;
