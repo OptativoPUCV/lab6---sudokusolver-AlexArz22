@@ -12,3 +12,13 @@ sudoku.c:55:9: error: ‘k’ undeclared (first use in this function)
       |         ^
 Compilation failed
 62a339f
+Fri 05 May 2023 03:23:51 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:56:14: error: subscripted value is neither array nor pointer nor vector
+   56 |       if(n[j][k]==0){
+      |              ^
+Compilation failed
+833171d
