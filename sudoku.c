@@ -53,7 +53,7 @@ List* get_adj_nodes(Node* n){
   List* list=createList();
   for(int j=0; j<9; j++){
     for(int k=0; k<9; k++){
-      if(n[j][k]==0){
+      if(n->sudo[j][k]==0){
         for(int i=1; i<=9; i++){
           Node *aux=copy(n);
           aux->sudo[j][k]=i; 
