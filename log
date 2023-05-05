@@ -1,0 +1,14 @@
+Fri 05 May 2023 03:23:38 AM UTC: 
+ sudoku.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:54:7: error: ‘j’ undeclared (first use in this function)
+   54 |   for(j=0; j<9; j++){
+      |       ^
+sudoku.c:54:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:55:9: error: ‘k’ undeclared (first use in this function)
+   55 |     for(k=0; k<9; k++){
+      |         ^
+Compilation failed
+62a339f
