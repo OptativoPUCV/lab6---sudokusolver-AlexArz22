@@ -135,3 +135,24 @@ Fri 05 May 2023 03:40:38 AM UTC:
  tests:  2|4
 total_score: 15/70
 acdd04c
+Fri 05 May 2023 03:40:53 AM UTC: 
+ sudoku.c | 13 +++++++------
+ 1 file changed, 7 insertions(+), 6 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:48:7: error: ‘p’ undeclared (first use in this function)
+   48 |   for(p=0;p<9;p++){
+      |       ^
+sudoku.c:48:7: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:49:16: error: ‘k’ undeclared (first use in this function)
+   49 |       int i=3*(k/3) + (p/3) ;
+      |                ^
+sudoku.c:69:11: error: unused variable ‘p’ [-Werror=unused-variable]
+   69 |   int k=4,p;
+      |           ^
+sudoku.c:69:7: error: unused variable ‘k’ [-Werror=unused-variable]
+   69 |   int k=4,p;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+3fe6822
