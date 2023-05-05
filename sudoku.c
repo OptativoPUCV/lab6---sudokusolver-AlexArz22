@@ -70,7 +70,7 @@ int is_valid(Node* n){
       }
     }
   }
-  
+  /*
   for(int i=0; i<9; i++){
     int *a=calloc(9,sizeof(int));
     for(int j=0; j<9; j++){
@@ -82,7 +82,7 @@ int is_valid(Node* n){
       }
     }
   }
-
+*/
   return 1;//valido
 }
 
