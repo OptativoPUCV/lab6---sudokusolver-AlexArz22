@@ -46,7 +46,7 @@ void print_node(Node* n){
 int is_valid(Node* n){
   
   for (int k=0; k<9; k++){
-    int *a=calloc(10,sizeof(int));
+    int *a=calloc(9,sizeof(int));
     for(int p=0;p<9;p++){
       int i=3*(k/3) + (p/3);
       int j=3*(k%3) + (p%3);
@@ -56,7 +56,7 @@ int is_valid(Node* n){
   } 
   
   for(int i=0; i<9; i++){
-    int *a=calloc(10,sizeof(int));
+    int *a=calloc(9,sizeof(int));
     for(int j=0; j<10; j++){
       if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]=1;
       else return 0;
