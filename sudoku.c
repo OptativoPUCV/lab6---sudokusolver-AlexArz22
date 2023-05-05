@@ -60,6 +60,13 @@ int is_valid(Node* n){
       else return 0;
     }
   }
+  int k=4,p; 
+  for(p=0;p<9;p++){
+      int i=3*(k/3) + (p/3) ;
+      int j=3*(k%3) + (p%3) ;
+      printf("%d ",nodo->sudo[i][j]);
+      if(p%3 == 2) printf("\n");
+  }
   return 1;//valido
 }
 
