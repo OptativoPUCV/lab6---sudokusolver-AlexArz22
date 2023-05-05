@@ -48,7 +48,7 @@ int is_valid(Node* n){
   for(int i=0; i<10; i++){
     int *a=calloc(10,sizeof(int));
     for(int j=0; j<10; j++){
-      if(a[n->sudo[i][j]]==0) a[[n->sudo[i][j]]]=1;
+      if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]]=1;
       else return 0;
     }
   }
@@ -56,7 +56,7 @@ int is_valid(Node* n){
   for(int i=0; i<10; i++){
     int *a=calloc(10,sizeof(int));
     for(int j=0; j<10; j++){
-      if(a[n->sudo[j][i]]==0) a[[n->sudo[i][j]]=1;
+      if(a[n->sudo[j][i]]==0) a[n->sudo[i][j]]=1;
       else return 0;
     }
   }

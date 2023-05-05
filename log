@@ -77,3 +77,31 @@ sudoku.c:60:21: error: expected ‘;’ before ‘}’ token
       |     ~                
 Compilation failed
 cd7f60d
+Fri 05 May 2023 03:36:17 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:51:32: error: statement with no effect [-Werror=unused-value]
+   51 |       if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]]=1;
+      |                               ~^~~~~~~~~~~~~~~
+sudoku.c:51:47: error: expected ‘;’ before ‘]’ token
+   51 |       if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]]=1;
+      |                                               ^
+      |                                               ;
+sudoku.c:51:7: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   51 |       if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]]=1;
+      |       ^~
+sudoku.c:51:47: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   51 |       if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]]=1;
+      |                                               ^
+sudoku.c:51:47: error: expected statement before ‘]’ token
+sudoku.c:51:48: error: expected expression before ‘=’ token
+   51 |       if(a[n->sudo[i][j]]==0) a[n->sudo[i][j]]]=1;
+      |                                                ^
+sudoku.c:52:7: error: ‘else’ without a previous ‘if’
+   52 |       else return 0;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d7cbe5a
