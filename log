@@ -45,3 +45,16 @@ Fri 05 May 2023 03:25:52 AM UTC:
  tests:  2|4
 total_score: 15/70
 b2da9cd
+Fri 05 May 2023 03:35:30 AM UTC: 
+ sudoku.c | 17 ++++++++++++++++-
+ 1 file changed, 16 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:51:33: error: expected expression before ‘[’ token
+   51 |       if(a[n->sudo[i][j]]==0) a[[n->sudo[i][j]]]=1;
+      |                                 ^
+sudoku.c:59:33: error: expected expression before ‘[’ token
+   59 |       if(a[n->sudo[j][i]]==0) a[[n->sudo[i][j]]]=1;
+      |                                 ^
+Compilation failed
+887b883

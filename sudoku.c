@@ -44,8 +44,23 @@ void print_node(Node* n){
 }
 
 int is_valid(Node* n){
-
-    return 1;
+  
+  for(int i=0; i<10; i++){
+    int *a=calloc(10,sizeof(int));
+    for(int j=0; j<10; j++){
+      if(a[n->sudo[i][j]]==0) a[[n->sudo[i][j]]]=1;
+      else return 0;
+    }
+  }
+  
+  for(int i=0; i<10; i++){
+    int *a=calloc(10,sizeof(int));
+    for(int j=0; j<10; j++){
+      if(a[n->sudo[j][i]]==0) a[[n->sudo[i][j]]]=1;
+      else return 0;
+    }
+  }
+  return 1;//valido
 }
 
 
