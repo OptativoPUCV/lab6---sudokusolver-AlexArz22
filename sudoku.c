@@ -50,7 +50,7 @@ int is_valid(Node* n){
     for(int p=0;p<9;p++){
       int i=3*(k/3) + (p/3);
       int j=3*(k%3) + (p%3);
-      if(a[n->sudo[i][j]-1]==0) a[n->sudo[i][j]]=1;
+      if(a[n->sudo[i][j]-1]==0) a[n->sudo[i][j]-1]=1;
       else return 0;
     } 
   } 
@@ -58,7 +58,7 @@ int is_valid(Node* n){
   for(int i=0; i<9; i++){
     int *a=calloc(9,sizeof(int));
     for(int j=0; j<10; j++){
-      if(a[n->sudo[i][j]-1]==0) a[n->sudo[i][j]]=1;
+      if(a[n->sudo[i][j]-1]==0) a[n->sudo[i][j]-1]=1;
       else return 0;
     }
   }
@@ -66,7 +66,7 @@ int is_valid(Node* n){
   for(int i=0; i<9; i++){
     int *a=calloc(9,sizeof(int));
     for(int j=0; j<10; j++){
-      if(a[n->sudo[j][i]-1]==0) a[n->sudo[i][j]]=1;
+      if(a[n->sudo[j][i]-1]==0) a[n->sudo[i][j]-1]=1;
       else return 0;
     }
   }
