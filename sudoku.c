@@ -130,7 +130,7 @@ Node* DFS(Node* initial, int* cont){
       for(Node* aux=first(lista); aux!=NULL; aux=next(lista)){
         push(pila, aux);
       }
-      free(nodo);
+      //free(nodo);
     }
     cont++;
   }
