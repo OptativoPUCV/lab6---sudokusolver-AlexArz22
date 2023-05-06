@@ -126,6 +126,7 @@ Node* DFS(Node* initial, int* cont){
     if(is_final(nodo)) return nodo;
     else{
       List *lista=get_adj_nodes(nodo);
+      if(lista==NULL) break;
       for(Node* aux=first(lista); next(lista)!=NULL; aux=next(lista)){
         push(pila, aux);
       }
