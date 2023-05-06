@@ -362,3 +362,13 @@ Sat 06 May 2023 12:32:28 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e780cd8
+Sat 06 May 2023 12:36:21 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:121:29: error: invalid application of ‘sizeof’ to incomplete type ‘Stack’ {aka ‘List’}
+  121 |   Stack *pila=malloc(sizeof(Stack));
+      |                             ^~~~~
+Compilation failed
+3b46fc4

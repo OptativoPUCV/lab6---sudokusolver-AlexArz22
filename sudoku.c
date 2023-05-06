@@ -118,7 +118,7 @@ int is_final(Node* n){
 }
 
 Node* DFS(Node* initial, int* cont){
-  Stack *pila=malloc(sizeof(pila));
+  Stack *pila=malloc(sizeof(Stack));
   push(pila, initial);
   while(top(pila)!=NULL){
     Node* nodo=top(pila);
@@ -130,7 +130,7 @@ Node* DFS(Node* initial, int* cont){
       for(Node* aux=first(lista); aux!=NULL; aux=next(lista)){
         push(pila, aux);
       }
-      //free(nodo);
+      free(nodo);
     }
     cont++;
   }
