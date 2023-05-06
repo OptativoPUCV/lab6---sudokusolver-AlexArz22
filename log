@@ -372,3 +372,8 @@ sudoku.c:121:29: error: invalid application of ‘sizeof’ to incomplete type �
       |                             ^~~~~
 Compilation failed
 3b46fc4
+Sat 06 May 2023 12:36:29 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+a9ed12f
